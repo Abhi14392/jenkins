@@ -29,3 +29,14 @@ Start Jenkins as a service:
 You can check the status of the Jenkins service using the command:
 
 [ec2-user ~]$ sudo systemctl status jenkins
+
+
+
+As prompted, enter the password found in /var/lib/jenkins/secrets/initialAdminPassword.
+
+Use the following command to display this password:
+
+[ec2-user ~]$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+The Jenkins installation script directs you to the Customize Jenkins page. Click Install suggested plugins.
+
+Once the installation is complete, the Create First Admin User will open. Enter your information, and then select Save and Continue.
